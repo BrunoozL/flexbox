@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link href="/css/style.css" rel="stylesheet"> -->
         <title>Flexbox</title>
         <style>
@@ -60,6 +61,10 @@
             margin-left: 10px;
         }
 
+        hr {
+            border: 1px solid #000000;
+        }
+
         .title {
             margin-top: 80px;
             justify-content: center;
@@ -105,6 +110,33 @@
             background-color: #000000;
         }
 
+        .container-expansions, .div-expansions {
+            justify-content: space-around;
+            display: flex;
+            margin: 40px 0;
+        }
+
+        .div-expansions {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex: 1;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .title-expansions {
+            font-family: "Poppins", sans-serif;
+            font-size: 22px;
+            margin: 20px;
+        }
+
+        .text-expansions {
+            flex-grow: 1;
+            margin: 20px 0;
+        }
+
 
         </style>
     </head>
@@ -121,6 +153,8 @@
                     <li> <a href="https://instagram.com/brunozkkj">Instagram</a> </li>
             </ul>
         </div>
+
+        <hr>
 
         <h1 class="title">Desça na Escuridão</h1>
         <div class="conteudo">
@@ -152,10 +186,34 @@
             </div>
         </div>
 
+        <hr>
+
         <h1 class="title">Hollow Knight expande com 4 pacotes gigantes de conteúdo gratuito</h1>
 
-        <div class="expansao">
-            
+        <div class="container-expansions">
+            <div class="div-expansions">
+                <h2 class="title-expansions">Sonhos Ocultos</h2>
+                <img src="img/img-sonhosocultos.jpg" alt="Sonhos Ocultos">
+                <p class="text-expansions">Novos inimigos poderosos surgem! Novas lutas contra chefes. Novas atualizações. Nova música.</p>
+            </div>
+            <div class="div-expansions">
+                <h2 class="title-expansions">Trupe Grimm</h2>
+                <img src="img/img-trupegrimm.jpg" alt="Trupe Grimm">
+                <p class="text-expansions">Acenda a Lanterna do Pesadelo. Convoque a Trupe. Nova Missão Principal.
+                     Novas Lutas contra Chefes. Novos Amuletos. Novos Inimigos. Novos Amigos.
+                </p>
+            </div>
+            <div class="div-expansions">
+                <h2 class="title-expansions">Seiva Vital</h2>
+                <img src="img/img-seivavital.jpg" alt="Seiva Vital">
+                <p class="text-expansions">Um Reino Atualizado! Novo Chefe. Chefes Atualizados. Ajustes e Refinamentos em todo o jogo.</p>
+            </div>
+            <div class="div-expansions">
+                <h2 class="title-expansions">Mestre dos Deuses</h2>
+                <img src="img/img-metredosdeuses.jpg" alt="Mestre dos Deuses">
+                <p class="text-expansions">Tome seu lugar entre os Deuses. Novos Personagens e Quest. Novas Lutas contra Chefes. Nova Música Épica!</p>
+            </div>
+
         </div>
     
         <footer class="rodape">
